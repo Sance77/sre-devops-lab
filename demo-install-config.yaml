@@ -1,0 +1,43 @@
+apiVersion: v1
+baseDomain: vaishnavocp.com
+metadata:
+  name: ocp-dev-pcmmu4
+platform:
+  aws:
+    region: ap-south-1
+    subnets: []
+compute:
+- hyperthreading: Enabled
+  name: worker
+  platform:
+    aws:
+      type: m5.large
+      rootVolume:
+        size: 120
+        type: gp3
+      zones: []
+  replicas: 3
+controlPlane:
+  hyperthreading: Enabled
+  name: master
+  platform:
+    aws:
+      type: m5.xlarge
+      rootVolume:
+        size: 120
+        type: gp3
+      zones: []
+  replicas: 3
+networking:
+  clusterNetwork:
+  - cidr: 10.128.0.0/14
+    hostPrefix: 23
+  networkType: OVNKubernetes
+  serviceNetwork:
+  - 172.30.0.0/16
+  machineNetwork:
+  - cidr: 10.0.0.0/16
+pullSecret: '' 
+sshKey: ''
+publish: External
+fips: false

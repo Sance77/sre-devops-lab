@@ -1,0 +1,13 @@
+install-config.yaml
+ocp-install/
+
+terraform.tfstate
+terraform-ocp-infra/terraform.tfstate
+terraform-ocp-infra/terraform.tfstate.*
+
+terraform-ocp-infra/terraform.tfvars
+
+tfplan
+output.txt
+*.log
+terraform-ocp-infra/.terraform/

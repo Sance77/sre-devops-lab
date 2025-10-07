@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: curl2
+  namespace: microservices-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: curl2
+  template:
+    metadata:
+      labels:
+        app: curl2
+    spec:
+      containers:
+        - name: curl2
+          image: quay.io/curl/curl:latest
+          command: ["/bin/sh"]
+          args: ["-c", "sleep infinity"]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: curl2
+  namespace: microservices-demo
+spec:
+  selector:
+    app: curl2
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

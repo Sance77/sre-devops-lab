@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: curl1
+  namespace: microservices-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: curl1
+  template:
+    metadata:
+      labels:
+        app: curl1
+      annotations:
+        k8s.v1.cni.cncf.io/networks: '[{
+          "name": "bridge-net",
+          "interface": "net1",
+          "ips": ["10.10.0.11/24"]
+        }]'
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: "ip-10-0-10-31.ap-south-1.compute.internal"
+      containers:
+        - name: curl1
+          image: quay.io/curl/curl:latest
+          command: ["/bin/sh"]
+          args: ["-c", "sleep infinity"]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: curl1
+  namespace: microservices-demo
+spec:
+  selector:
+    app: curl1
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+
